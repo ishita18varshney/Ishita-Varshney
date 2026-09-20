@@ -4,59 +4,130 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f7fa;
+    background-color: #f4f7fb;
     color: #222;
     line-height: 1.6;
 }
 
+
+/* Header */
+
 header {
     background-color: #1f2937;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 40px 20px;
 }
 
 header h1 {
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
+header p {
+    font-size: 20px;
+}
+
+
+/* Navigation */
+
 nav {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
+
+/* Sections */
+
 section {
     max-width: 900px;
     margin: 30px auto;
-    padding: 30px;
+    padding: 35px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-h2 {
+section h2 {
     color: #1f2937;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1f2937;
+    padding-bottom: 8px;
 }
+
+section h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/* Skills and Lists */
 
 ul {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Footer */
+
 footer {
-    text-align: center;
     background-color: #1f2937;
     color: white;
-    padding: 20px;
-    margin-top: 30px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 20px 10px;
+        padding: 25px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
 }
